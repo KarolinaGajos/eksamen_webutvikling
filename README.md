@@ -9,3 +9,6 @@ Jeg har hentet icone fra https://fontawesome.com/icons
 Jeg har tatt placeholder bilder fra https://placehold.co/400x400/png
 
 
+bilde : Bildet er tatt av <a href="https://pixabay.com/no/users/vanmarciano-1310286/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2038872">Fabrizio Van Marciano</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2038872">Pixabay</a>
+
+bilde 2 Bildet er tatt av <a href="https://pixabay.com/no/users/picjumbo_com-2130229/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=865091">free stock photos from www.picjumbo.com</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=865091">Pixabay</a>
