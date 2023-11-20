@@ -24,18 +24,19 @@
         <title>Products.html</title>
     </head>
     <body>
+        <a id="top"></a> <!-- for scroll to top button -->
         <a href="#maincontent" class="skip-link" lang="en">Skip to main content</a>
         <div id="grid-container">
             <header>
-                <nav>
+                <nav class="navigasjon_header">
                     <a href="index.html" id="logo">
                         <img src="../img/ressurser/logo1.png" alt="logo">
                     </a>
-                    <ul>
+                    <ul class="navigasjon_list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Portfolio</a></li>
+                        <li class="active_page"><a href="products.html">Portfolio</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="about.html#contact">Contact</a></li>
+                        <li><a href="about.html#contact" id="contact_btn">Contact</a></li>
                     </ul>
                 </nav>
                 <section class="portfolio">
@@ -110,5 +111,7 @@
                 </ul>
             </footer>
         </div>
+        <!-- "Back to Top" button -->
+        <a href="#top" class="back-to-top-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
     </body>
 </html>

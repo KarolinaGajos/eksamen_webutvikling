@@ -10,8 +10,72 @@ body{
 
 /* responsitv desgin */
 @media only screen and (min-width: 900px){
+    *{
+        box-sizing: border-box;
+        font: inherit;
+        margin: 0;
+        padding: 0;
+    }
 
-    /* cdieo start */
+    body{
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+    /* start header */
+    .navigasjon_header{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        padding: 2%;
+    }
+
+    .navigasjon_list{
+        grid-column: 3;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+    }
+    .navigasjon_list *{
+        text-decoration: none;
+        color: black;
+        font-weight:bold;
+        font-size: large;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    /* contaxt button start */
+    #contact_btn {
+        color: black;
+        background-color: #e6bd43;
+        border: none;
+        padding: 1rem;
+        padding: 1rem;
+        transition: background-color 0.5s, color 0.5s; 
+    }
+    
+    #contact_btn:hover {
+        background-color: black;
+        color: #e6bd43;
+        margin-left: 0%;
+        margin-right: 0%;
+        cursor: pointer;
+    }
+    /* contaxt button end */
+
+    /* underline når den aktuelle page er active */
+    .active_page *{
+        display: inline-block;
+        text-decoration: underline #e6bd43;
+        font-weight: bolder;
+        
+    }
+
+    /* vdieo start */
 
     .compeling_headline {
         position: relative;
@@ -70,7 +134,9 @@ body{
         border: none;
         cursor: pointer;
     }
+    /* end of video */
 
+    /* start tastaturnavigering */
     .skip-link {
         position: absolute;
         top: -40px;
@@ -78,9 +144,32 @@ body{
         background: #000;
         color: white;
         padding: 8px;
-  }
+    }
   
     .skip-link:focus {
         top: 0;
-  }
+    }
+  /* end tastaturnavigering */
+  /* start button up  */
+
+    .back-to-top-btn {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+        background-color: black; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
+
+    .back-to-top-btn:hover {
+        opacity: 1;
+    }
 }

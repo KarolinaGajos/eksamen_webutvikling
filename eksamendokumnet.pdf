@@ -6,3 +6,18 @@ Kilder:
 Font awesome: Jeg har overførte font awesome mappe fra min egen PC, siden jeg hadde det siden vi brukte det på tidligere Obliger. Link til src er i html koden.
 Jeg har hentet icone fra https://fontawesome.com/icons
 Jeg har tatt placeholder bilder fra https://placehold.co/400x400/png
+
+Googlemaps: kilde: https://developers.google.com/maps/documentation/embed/embedding-map
+
+Links to a spesifikk section: https://stackoverflow.com/questions/8424785/link-to-a-section-of-a-webpage
+I use id, and droppa div
+
+tastaturnevigering: det var copy-pase av kode fra Oblig 4 i webutvikling 
+
+Video - hadde samtale med Chatgpt underveis, den anbefalte de eksta div taggene, etter implemetering av chatgpt anbefalinger video funker. 
+
+Favicon fikset med: https://www.youtube.com/watch?v=Gpa780F9haQ
+
+Fikk hjelp av chatgpt til å fikse :hover, dvs at icon med pillen er alltid på siden
+
+Header: display med grid og flex fikk jeg hjelp av de tidligere obligene, det å få den aktuelle siden underlinja samt litt boldere i skrift fikk jeg hjelp av chatgpt - det fortalte meg å lage egen classen for dette og så sette den riktig classe på den riktig side. 
