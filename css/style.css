@@ -16,6 +16,9 @@ body{
         margin: 0;
         padding: 0;
     }
+    #grid-container{
+        display: grid;
+    }
 
     body{
         width: 100%;
@@ -79,7 +82,7 @@ body{
 
     .compeling_headline {
         position: relative;
-        height: 100vh; /* Adjust the height as needed */
+        height: 80vh; /* Adjust the height as needed */
         overflow: hidden;
     }
     
@@ -101,7 +104,7 @@ body{
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Adjust the transparency here */
+        background: rgba(227, 221, 221, 0.084);
         z-index: 0; /* Ensure the overlay is behind the content */
     }
     
@@ -111,33 +114,160 @@ body{
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        color: white;
+        color: black;
         z-index: 1; /* Set content on top of the video */
     }
     
     h1 {
-        font-size: 3rem;
+        
+        font-size: 4rem;
+        font-weight: bold;
         margin-bottom: 20px;
     }
     
     p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-bottom: 30px;
     }
     
-    .black-btn {
+    .read_more_about_out_services_btn{
         padding: 10px 20px;
         font-size: 1.2rem;
-        background-color: #000; /* Button background color */
-        color: #fff; /* Button text color */
+        font-weight: bold;
+        background-color: #e6bd43; /* Button background color */
+        color: black; /* Button text color */
         text-decoration: none;
         border: none;
         cursor: pointer;
     }
+
+    .read_more_about_out_services_btn:hover {
+        background-color: black;
+        color: #e6bd43;
+        margin-left: 0%;
+        margin-right: 0%;
+        cursor: pointer;
+    }
     /* end of video */
 
+    /* subheading start */
+
+    .subheading{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        padding: 6%;
+    }
+
+    .subheading h2{
+        grid-column: 2;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .subheading p{
+        grid-column: 2;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        padding: 4%;
+    }
+    /* slutt subheading */
+    /* start about_out_company */
+    .about_our_company{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        background-color: #e6bd43;
+        width: 100%;
+        padding: 2%;
+        grid-gap:4%;
+        justify-content: start;
+    }
+
+    .about_our_company h2{
+        grid-column: 2;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+    .about_our_company p{
+        grid-column: 2;
+        text-align: left;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        margin-left: 4%;
+    }
+
+    .read_more_about_us_btn{
+        padding: 10px 20px;
+        margin-left: 4%;
+        font-size: 1.2rem;
+        border: 2px solid black; 
+        font-weight: bold;
+        background-color: #e6bd43; /* Button background color */
+        color: black; /* Button text color */
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .read_more_about_us_btn:hover {
+        background-color: black;
+        color: #e6bd43;
+        margin-left: 4%;
+        margin-right: 0%;
+        cursor: pointer;
+    }   
+    /* slutt about_our_company */
+    /* start out_services */
+    .our_services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        text-align: center;
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        height: 100vh; /* Set a specific height if desired */
+    }
+    
+    .our_services h2 {
+        grid-column: span 4; /* Make the h2 span across all columns */
+        margin-top: 0; /* Remove default margin */
+        font-size: 30px;
+        font-weight: bold;
+        padding: 2%;
+    }
+    
+    .our_services article {
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    .our_services article i{
+        font-size: 2rem;
+    }
+
+    .our_services article h2{
+        font-size: 1.5rem;
+    }
+    .our_services article p{
+        font-size: 1rem;
+
+    }
+    /* slutt our_services */
+    /* start newsletter */
+    /* slutt newsletter */
+    /* start footer */
+    /* slutt footer */
+
+    
+
     /* start tastaturnavigering */
-    .skip-link {
+    .skip-link{
         position: absolute;
         top: -40px;
         left: 0;
@@ -149,8 +279,8 @@ body{
     .skip-link:focus {
         top: 0;
     }
-  /* end tastaturnavigering */
-  /* start button up  */
+    /* end tastaturnavigering */
+    /* start button up  */
 
     .back-to-top-btn {
         display: block;
