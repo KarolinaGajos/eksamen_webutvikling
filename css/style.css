@@ -231,7 +231,7 @@ body{
         text-align: center;
         align-items: center; /* Center items vertically */
         justify-content: center; /* Center items horizontally */
-        height: 100vh; /* Set a specific height if desired */
+        height: 50vh; /* Set a specific height if desired */
     }
     
     .our_services h2 {
@@ -243,7 +243,7 @@ body{
     }
     
     .our_services article {
-        border: 1px solid black;
+        border: none;
         padding: 20px;
     }
 
@@ -253,6 +253,8 @@ body{
 
     .our_services article h2{
         font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1%;
     }
     .our_services article p{
         font-size: 1rem;
@@ -260,11 +262,84 @@ body{
     }
     /* slutt our_services */
     /* start newsletter */
-    /* slutt newsletter */
-    /* start footer */
-    /* slutt footer */
+    .newsletter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        background-color: #e0d9d8;
+        flex-direction: column;
+    }
+
+    .newsletter h2{
+        font-size: 1.5rem;
+        padding: 2%;
+        font-weight: bold;
+    }
+    .newsletter input[type="text"] {
+        padding: 12px 20px; 
+        height: auto; /* Justerer høyden til å passe innholdet, kan endres til en fast høyde om nødvendig */
+        font-size: 16px; /* Samme fontstørrelse som knappen */
+        border: 2px solid #ddd; /* Eksempel på en border, kan tilpasses */
+        box-sizing: border-box; /* Sørger for at padding ikke legger til ekstra bredde */
+    }
+
+    #signup{
+        padding: 10px 20px;
+    }
+
+    #sign_me_up {
+        background-color: #e6bd43;
+        color: black; 
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+    }
+      
+    #sign_me_up:hover {
+        background-color: black;
+        color: #e6bd43;
+    }
 
     
+    /* slutt newsletter */
+    /* start footer */
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 20px;
+        width: 100%;
+        background-color: #252525;
+
+    }
+    .footer h3{
+        text-align: center;
+        font-size: large;
+        padding: 2rem;
+        color: #ddd;
+
+    }
+    #social-icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100px;
+        list-style-type: none;
+        
+        
+      }
+
+    #social-icons i{
+        color: white;
+        font-size: 2rem;
+        
+
+    }
+    /* slutt footer */
+
 
     /* start tastaturnavigering */
     .skip-link{
