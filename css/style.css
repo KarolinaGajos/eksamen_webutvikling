@@ -1,97 +1,49 @@
 
+@media only screen and (max-width: 600px){
+    #grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: "header" "search" "main" "footer";
+    }
+    body{
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 0;
+    
+    }
+    .video-container{
+        display: none;
+     }
+    #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+    
 
-body{
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    background-color: #fff;
+    .navigasjon_list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        list-style-type: none;
+        padding: 0%;
+    }
+    .navigasjon_list *{
+        text-decoration: none;
+        color: black;
+        font-weight:bold;
+        font-size: large;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
 }
-#video {
-    display: none;
-  }
-
-.headline {
-    margin-top: 1rem;
-    position: relative;
-    background-image: url(/ressurser/ressurser/pen-4337521_1280.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .headline::before{     /*fikk hjelp fra chatgp*/
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.4); 
-    z-index: 1;
-  }
-
-  .headline * {
-    position: relative;
-    z-index: 2;
-  }
-
-  .btn-read-more-about {
-    padding: 1rem;
-  }
-
-  .navigation-line {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .navi-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contact {
-    margin-top: 10%;
-  }
-
-  #btn-contact {
-    padding: 1rem;
-  }
-
-.yellow-our-company {
-  padding-top: 10%;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  background-color: #e6bd43;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.our-company-index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.our-company-index p {
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-.placeholder-index img {
-  margin: 0;
-}
-
-.btn-read-more-about-us {
-  padding: 3%;
-}
-
-
 
 
 /* responsitv desgin */
