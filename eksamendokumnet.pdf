@@ -12,6 +12,8 @@ Googlemaps: kilde: https://developers.google.com/maps/documentation/embed/embedd
 Links to a spesifikk section: https://stackoverflow.com/questions/8424785/link-to-a-section-of-a-webpage
 I use id, and droppa div
 
+Alle hover effekter på knappene ble gjørt med: https://www.w3schools.com/cssref/sel_hover.php
+
 tastaturnevigering: det var copy-pase av kode fra Oblig 4 i webutvikling 
 
 Video - hadde samtale med Chatgpt underveis, den anbefalte de eksta div taggene, etter implemetering av chatgpt anbefalinger video funker. 
