@@ -23,3 +23,5 @@ Favicon fikset med: https://www.youtube.com/watch?v=Gpa780F9haQ
 Fikk hjelp av chatgpt til å fikse :hover, dvs at icon med pillen er alltid på siden
 
 Header: display med grid og flex fikk jeg hjelp av de tidligere obligene, det å få den aktuelle siden underlinja samt litt boldere i skrift fikk jeg hjelp av chatgpt - det fortalte meg å lage egen classen for dette og så sette den riktig classe på den riktig side. 
+
+About site - about_our_company_2 - har gjør jeg bevist valg å plassere content to the left siden bilde har mer content på høyre siden. 
