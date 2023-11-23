@@ -1,52 +1,5 @@
 
-@media only screen and (max-width: 600px){
-    #grid-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,auto);
-        grid-template-areas: "header" "search" "main" "footer";
-    }
-    body{
-        width: 100%;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 0;
-    
-    }
-    .video-container{
-        display: none;
-     }
-    #logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2%;
-    }
-    
-
-    .navigasjon_list{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 15px;
-        list-style-type: none;
-        padding: 0%;
-    }
-    .navigasjon_list *{
-        text-decoration: none;
-        color: black;
-        font-weight:bold;
-        font-size: large;
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-    }
-}
-
-
-/* responsitv desgin */
+/* responsitv desgin - desktop */
 @media only screen and (min-width: 600px){
     *{
         box-sizing: border-box;
@@ -120,7 +73,7 @@
 
     .compeling_headline {
         position: relative;
-        height: 80vh; /* Adjust the height as needed */
+        height: 140vh; 
         overflow: hidden;
     }
     
@@ -172,8 +125,8 @@
         padding: 10px 20px;
         font-size: 1.2rem;
         font-weight: bold;
-        background-color: #e6bd43; /* Button background color */
-        color: black; /* Button text color */
+        background-color: #e6bd43; 
+        color: black; 
         text-decoration: none;
         border: none;
         cursor: pointer;
@@ -212,6 +165,7 @@
         padding: 4%;
     }
     /* slutt subheading */
+
     /* start about_out_company */
     .about_our_company{
         display: grid;
@@ -242,13 +196,15 @@
     }
 
     .read_more_about_us_btn{
+        display: flex;
+        width: fit-content;
         padding: 10px 20px;
         margin-left: 4%;
         font-size: 1.2rem;
         border: 2px solid black; 
         font-weight: bold;
-        background-color: #e6bd43; /* Button background color */
-        color: black; /* Button text color */
+        background-color: #e6bd43; 
+        color: black; 
         text-decoration: none;
         cursor: pointer;
     }
@@ -261,15 +217,17 @@
         cursor: pointer;
     }   
     /* slutt about_our_company */
+
     /* start out_services */
+    
     .our_services {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
         text-align: center;
-        align-items: center; /* Center items vertically */
-        justify-content: center; /* Center items horizontally */
-        height: 50vh; /* Set a specific height if desired */
+        align-items: center; 
+        justify-content: center; 
+        height: 50vh; 
     }
     
     .our_services h2 {
@@ -298,6 +256,8 @@
         font-size: 1rem;
 
     }
+
+   
     /* slutt our_services */
     /* start newsletter */
     .newsletter{
@@ -379,6 +339,7 @@
     /* slutt footer */
     /* slutt på index.html */
 
+
     /* products html start */
     /* portfolio start  */
     .portfolio {
@@ -457,61 +418,65 @@
         font-weight: bold;
     }
     /* start brandig */
-    
-
+    /* Set a common style for the sections */
     .branding, .design, .development {
         background-color: white;
         width: 100%;
         padding: 2%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; /* Adjust as needed to control the space between article cards */
+        justify-content: space-between;
     }
-    
-    .branding h2, .design h2, .development h2{
+  
+  /* Style for the heading in each section */
+    .branding h2, .design h2, .development h2 {
         display: inline-block;
         border-bottom: 5px solid #e6bd43; /* Yellow line color */
         font-size: 2rem;
         font-weight: bold;
-        margin-bottom: 20px; /* Add margin to separate the list items */
-        width: -moz-available;
-        
+        margin-bottom: 20px;
+        width: 100%; /* Full width */
     }
-    .branding h3, .design h3, .development h3{
+  
+  /* Style for the subheading in each section */
+    .branding h3, .design h3, .development h3 {
         font-size: 1rem;
         font-weight: bold;
-        margin-bottom: 20px; /* Add margin to separate the list items */
-        width: -moz-available;
-        
+        margin-bottom: 20px;
+        width: 100%; /* Full width */
     }
-    
-    /* Style for each article card within a section */
+  
+  /* Style for each article card within a section */
     .branding article, .design article, .development article {
-        flex: 1 1 auto; /* flex-grow: 1, flex-shrink: 1, flex-basis: auto */
-        max-width: 692px; /* Maximum width for each article card */
-        margin-bottom: 40px; /* Adjust as needed to control the space between rows of cards */
+        flex: 1 1 200px; /* flex-grow: 1, flex-shrink: 1, flex-basis: 200px (minimum width) */
+        max-width: 692px; /* Set the maximum width */
+        margin-bottom: 40px;
         box-sizing: border-box;
-        transition: transform 0.3s ease-in-out; /* Add a transition for the transform property */
+        transition: transform 0.3s ease-in-out;
     }
-    /* Make the last article in the "Branding" section larger */
+  
+  /* Make the last article in the "branding" section larger */
     .branding article:last-child {
         flex-grow: 2; /* Adjust the flex-grow value based on your requirement */
     }
-
-    /* Remove margin-bottom from the last article in each section to avoid extra space */
+  
+  /* Remove margin-bottom from the last article in each section to avoid extra space */
     .branding article:last-child, .design article:last-child, .development article:last-child {
         margin-bottom: 0;
     }
-    /* Set a max-width for the "Development" section */
+  
+  /* Set a max-width for the "development" section */
     .development {
         max-width: none; /* Adjust the max-width based on your design */
         width: 100%; /* Ensure the section takes 100% width within its parent */
     }
-
-    /* Add a hover effect for the article cards */
+  
+  /* Add a hover effect for the article cards */
     .branding article:hover, .design article:hover, .development article:hover {
         transform: scale(1.03); /* Increase the scale on hover */
     }
+    
+
     /* slutt brandig */
     /*  start design  */
     /* slutt design  */
@@ -775,3 +740,624 @@
         opacity: 1;
     }
 }
+/* responsiv design - mobil */
+
+@media only screen and (max-width: 599px){
+    #grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,auto);
+        grid-template-areas: "navigasjon" "headline" "subheading" "about_our_company" "our_services" "newsletter" "footer";
+    }
+    body{
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 0;
+    
+    }
+    .skip-link{
+        display: none;
+    }
+    
+
+    .video-container{
+        display: none;
+     }
+
+    .navigasjon_header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+    
+
+    .navigasjon_list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        list-style-type: none;
+        padding: 0%;
+    }
+    .navigasjon_list *{
+        grid-area: "navigasjon";
+        text-decoration: none;
+        color: black;
+        font-weight:bold;
+        font-size: large;
+        padding: 0;
+        margin: 0.5rem;
+        list-style-type: none;
+    }
+     /* contaxt button start */
+     #contact_btn {
+        color: black;
+        background-color: #e6bd43;
+        border: none;
+        padding: 1rem;
+        padding: 1rem;
+        transition: background-color 0.5s, color 0.5s; 
+    }
+    
+    #contact_btn:hover {
+        background-color: black;
+        color: #e6bd43;
+        margin-left: 0%;
+        margin-right: 0%;
+        cursor: pointer;
+    }
+    /* contaxt button end */
+
+    /* underline når den aktuelle page er active */
+    .active_page *{
+        display: inline-block;
+        text-decoration: underline #e6bd43;
+        font-weight: bolder;
+        
+    }
+
+    .compeling_headline{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/office-865091_640.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+    
+    .compeling_headline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.3); /* Adjust the color and opacity as needed */
+      }
+
+    .compeling_headline {
+        position: relative;
+        height: 40vh; /* Adjust the height as needed */
+        overflow: hidden;
+        margin-top: 2rem;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(227, 221, 221, 0.084);
+        z-index: 0; /* Ensure the overlay is behind the content */
+    }
+    
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: black;
+        z-index: 1; /* Set content on top of the video */
+    }
+    
+    h1 {
+        
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .read_more_about_out_services_btn{
+        padding: 10px 20px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        background-color: #e6bd43; /* Button background color */
+        color: black; /* Button text color */
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .read_more_about_out_services_btn:hover {
+        background-color: black;
+        color: #e6bd43;
+        margin-left: 0%;
+        margin-right: 0%;
+        cursor: pointer;
+    }
+    /* end of headline*/
+    /* start subheading  */
+    .subheading{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 6%;
+        
+    }
+    .subheading h2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .subheading p{
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    /* slutt subheadline */
+
+    /* start about out company */
+    /* start about_out_company */
+    .about_our_company{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        padding: 2%;
+        background-color: #e6bd43;
+        grid-gap:2%;
+    }
+    .about_our_company img{
+        width: 300px;
+        
+    }
+    .about_our_company article{
+        padding: 4rem;
+        display: inline-grid;
+    }
+
+    .about_our_company h2{
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .about_our_company p{
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .read_more_about_us_btn{
+        padding: 10px 20px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        background-color: #e6bd43; 
+        color: black; 
+        text-decoration: none;
+        cursor: pointer;
+        border: 2px solid black;
+        justify-self: center;
+        align-self: center; 
+    }
+
+    .read_more_about_us_btn:hover {
+        background-color: black;
+        color: #e6bd43;
+        margin-left: 0%;
+        margin-right: 0%;
+        cursor: pointer;
+
+    }   
+    /* slutt about_our_company */
+
+    .our_services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center; /* Center items vertically */
+        place-items: center;
+        padding: 20px; /* Changed from percentage to pixels for better responsiveness */
+      }
+      
+    .our_services h2 {
+        grid-column: 1;
+        margin-top: 0;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 2%;
+        text-align: center; /* Center the heading text */
+      }
+      
+    .our_services article {
+        border: none;
+        display: flex; /* Use flexbox to center content inside the article */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
+        padding: 20px;
+        max-width: 300px; /* Optional: Set a maximum width for the articles */
+        margin: 10px; /* Add some margin between articles */
+      }
+      
+    .our_services article i {
+        font-size: 2rem;
+      }
+      
+    .our_services article h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1%;
+      }
+      
+    .our_services article p {
+        font-size: 1rem;
+        text-align: center;
+      }
+      
+    
+    /* start newsletter */
+    .newsletter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        background-color: #e0d9d8;
+        flex-direction: column;
+    }
+
+    .newsletter h2{
+        font-size: 1.5rem;
+        padding: 2%;
+        font-weight: bold;
+    }
+    .newsletter input[type="text"] {
+        padding: 12px 20px; 
+        height: auto; /* Justerer høyden til å passe innholdet, kan endres til en fast høyde om nødvendig */
+        font-size: 16px; /* Samme fontstørrelse som knappen */
+        border: 2px solid #ddd; /* Eksempel på en border, kan tilpasses */
+        box-sizing: border-box; /* Sørger for at padding ikke legger til ekstra bredde */
+    }
+
+    #signup{
+        padding: 10px 20px;
+    }
+
+    #sign_me_up {
+        background-color: #e6bd43;
+        color: black; 
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+    }
+      
+    #sign_me_up:hover {
+        background-color: black;
+        color: #e6bd43;
+    }
+
+    
+    /* slutt newsletter */
+
+    /* start footer */
+    /* start footer */
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        justify-items: center;
+        place-items: center;
+        background-color: #252525;
+        padding: 1rem;
+
+    }
+    .footer h3{
+        text-align: center;
+        font-size: large;
+        padding: 2rem;
+        color: #ddd;
+
+    }
+    #social-icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100px;
+        list-style-type: none;
+        padding: 0%;
+        
+      }
+
+    #social-icons i{
+        color: white;
+        font-size: 2rem;
+    
+    }
+    
+    
+
+    /* portfolio nettside */
+
+    .portfolio {
+        display: grid;
+        background-image: url('../img/office-865091_640.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+      }
+    
+    
+    .portfolio img {
+        display: none; /* Hide the image on mobile */
+      }
+    
+    .portfolio h1 {
+        position: relative;
+        place-self: center;
+        align-self: center;
+        z-index: 1;
+      }
+    /* slutt portfolio */
+
+    /* start explore  */
+    .explore{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        padding: 2%;
+        grid-gap:2%;
+    }
+    .explore h2 {
+        display: inline-block;
+        border-bottom: 5px solid #e6bd43; /* Yellow line color */
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px; /* Add margin to separate the list items */
+        width: -moz-available;
+        padding: 2rem;
+
+    }
+    
+    .explore ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .explore li {
+        display: inline-block;
+        margin-right: 20px; /* Adjust as needed to control the distance between list items */
+        padding: 1rem;
+        border: 2px solid black; 
+    }
+    
+    .explore li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #333; /* Set the color of the link text */
+        display: block; /* Make the entire area clickable */
+    }
+
+    .explore li:hover {
+        background-color: #e6bd43; /* Yellow background color on hover */
+        border-color: #e6bd43; /* Yellow border color on hover */
+    }
+
+    .explore li:hover a {
+        color: black; /* Black text color on hover */
+        font-weight: bold;
+    }
+     /* Set a maximum width for each section on small screens */
+    .branding, .design, .development {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+        max-width: 100%;
+    }
+    .branding h2, .design h2, .development h2 {
+        width: -moz-available;
+        align-self: left;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border-bottom: 5px solid #e6bd43; /* Yellow line color */
+        padding: 2rem;
+    }
+
+  /* Reset the width for article cards on small screens */
+    .branding article, .design article, .development article {
+        flex: 1 1 calc(100% - 20px); /* Full width with some margin between cards */
+    }
+    /* slutt poroducts  */
+
+    /* start about */
+
+    /*  start about our company 2 */
+    .about_our_company_2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../img/office-865091_640.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+    }
+    .about_our_company_2 img{
+        display: none;
+        
+    }
+    .about_our_company_2 article{
+        padding: 4rem;
+    }
+
+    .about_our_company_2 h2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .about_our_company_2 p{
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .get_in_touch_with_us_btn{
+        padding: 10px 20px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        background-color: #e6bd43; 
+        color: black; 
+        text-decoration: none;
+        cursor: pointer;
+        border: 2px solid black;
+        justify-self: center;
+        align-self: center; 
+    }
+
+    .get_in_touch_with_us_btn:hover {
+        background-color: black;
+        color: #e6bd43;
+        margin-left: 0%;
+        margin-right: 0%;
+        cursor: pointer;
+
+    } 
+    
+    
+    
+    .portfolio img {
+        display: none; /* Hide the image on mobile */
+      }
+    /* slutt about us */
+
+    /*  start our services 2  */
+    
+    .our_services_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center; /* Center items vertically */
+        place-items: center;
+        padding: 20px; /* Changed from percentage to pixels for better responsiveness */
+      }
+      
+    .our_services_2 h2 {
+        grid-column: 1;
+        margin-top: 0;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 2%;
+        text-align: center; /* Center the heading text */
+      }
+      
+    .our_services_2 article {
+        border: none;
+        display: flex; /* Use flexbox to center content inside the article */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
+        padding: 20px;
+        max-width: 300px; /* Optional: Set a maximum width for the articles */
+        margin: 10px; /* Add some margin between articles */
+      }
+      
+    .our_services_2 article i {
+        font-size: 2rem;
+      }
+      
+    .our_services_2 article h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1%;
+      }
+      
+    .our_services_2 article p {
+        font-size: 1rem;
+        text-align: center;
+      }
+      
+    
+
+    /* slutt our services 2  */
+
+
+
+
+
+
+
+
+    .back-to-top-btn {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+        background-color: black; 
+        color: #fff; 
+        border: none;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
+
+    .back-to-top-btn:hover {
+        opacity: 1;
+    }
+
+}
+    
+
+
+
+
