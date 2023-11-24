@@ -757,14 +757,7 @@
         list-style-type: none;
     }
     /* contaxt button start */
-    #contact_btn {
-        color: black;
-        background-color: #e6bd43;
-        border: none;
-        padding: 1rem;
-        padding: 1rem;
-        transition: background-color 0.5s, color 0.5s; 
-    }
+    
     
     #contact_btn:hover {
         background-color: black;
