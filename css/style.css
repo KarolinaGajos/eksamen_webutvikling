@@ -1,18 +1,730 @@
 
+
+    *{
+        box-sizing: border-box;
+        font: inherit;
+    }
+    
+    body{
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 0;
+    
+    }
+    .skip-link{
+        display: none;
+    }
+    
+
+    .video-container{
+        display: none;
+     }
+
+    .navigasjon_header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+    
+
+    .navigasjon_list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        list-style-type: none;
+        padding: 0%;
+    }
+    .navigasjon_list *{
+        grid-area: "navigasjon";
+        text-decoration: none;
+        color: black;
+        font-weight:bold;
+        font-size: large;
+        padding: 0;
+        margin: 0.5rem;
+        list-style-type: none;
+    }
+     /* contaxt button start */
+     #contact_btn {
+        color: black;
+        background-color: #e6bd43;
+        border: none;
+        padding: 1rem;
+        padding: 1rem;
+        transition: background-color 0.5s, color 0.5s; 
+    }
+    
+    
+    /* contaxt button end */
+
+    /* underline når den aktuelle page er active */
+    .active_page *{
+        display: inline-block;
+        text-decoration: underline #e6bd43;
+        font-weight: bolder;
+        
+    }
+
+    .compeling_headline{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/office-865091_640.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+    
+    .compeling_headline::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.3); /* Adjust the color and opacity as needed */
+      }
+
+    .compeling_headline {
+        position: relative;
+        height: 40vh; /* Adjust the height as needed */
+        overflow: hidden;
+        margin-top: 2rem;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(227, 221, 221, 0.084);
+        z-index: 0; /* Ensure the overlay is behind the content */
+    }
+    
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: black;
+        z-index: 1; /* Set content on top of the video */
+    }
+    
+    h1 {
+        
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .read_more_about_out_services_btn{
+        padding: 10px 20px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        background-color: #e6bd43; /* Button background color */
+        color: black; /* Button text color */
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    
+    /* end of headline*/
+    /* start subheading  */
+    .subheading{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 6%;
+        
+    }
+    .subheading h2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .subheading p{
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    /* slutt subheadline */
+
+    /* start about out company */
+    /* start about_out_company */
+    .about_our_company{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        padding: 2%;
+        background-color: #e6bd43;
+        grid-gap:2%;
+    }
+    .about_our_company img{
+        width: 300px;
+        
+    }
+    .about_our_company article{
+        padding: 4rem;
+        display: inline-grid;
+    }
+
+    .about_our_company h2{
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .about_our_company p{
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .read_more_about_us_btn{
+        padding: 10px 20px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        background-color: #e6bd43; 
+        color: black; 
+        text-decoration: none;
+        cursor: pointer;
+        border: 2px solid black;
+        justify-self: center;
+        align-self: center; 
+    }
+
+     
+    /* slutt about_our_company */
+
+    .our_services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center; /* Center items vertically */
+        place-items: center;
+        padding: 20px; /* Changed from percentage to pixels for better responsiveness */
+      }
+      
+    .our_services h2 {
+        grid-column: 1;
+        margin-top: 0;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 2%;
+        text-align: center; /* Center the heading text */
+      }
+      
+    .our_services article {
+        border: none;
+        display: flex; /* Use flexbox to center content inside the article */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
+        padding: 20px;
+        max-width: 300px; /* Optional: Set a maximum width for the articles */
+        margin: 10px; /* Add some margin between articles */
+      }
+      
+    .our_services article i {
+        font-size: 2rem;
+      }
+      
+    .our_services article h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1%;
+      }
+      
+    .our_services article p {
+        font-size: 1rem;
+        text-align: center;
+      }
+      
+    
+    /* start newsletter */
+    .newsletter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        background-color: #e0d9d8;
+        flex-direction: column;
+    }
+
+    .newsletter h2{
+        font-size: 1.5rem;
+        padding: 2%;
+        font-weight: bold;
+    }
+    .newsletter input[type="text"] {
+        padding: 12px 20px; 
+        height: auto; /* Justerer høyden til å passe innholdet, kan endres til en fast høyde om nødvendig */
+        font-size: 16px; /* Samme fontstørrelse som knappen */
+        border: 2px solid #ddd; /* Eksempel på en border, kan tilpasses */
+        box-sizing: border-box; /* Sørger for at padding ikke legger til ekstra bredde */
+    }
+
+    #signup{
+        padding: 10px 20px;
+    }
+
+    #sign_me_up {
+        background-color: #e6bd43;
+        color: black; 
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+    }
+      
+    
+
+    
+    /* slutt newsletter */
+
+    /* start footer */
+    /* start footer */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        place-items: center;
+        background-color: #252525;
+        padding: 1rem;
+
+    }
+    .footer h3{
+        flex: 1;
+        text-align: center;
+        font-size: large;
+        padding: 2rem;
+        color: #ddd;
+
+    }
+    #social-icons{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        width: 100px;
+        list-style-type: none;
+        padding: 0%;
+        
+      }
+
+    #social-icons i{
+        color: white;
+        font-size: 2rem;
+    
+    }
+    
+    
+
+    /* portfolio nettside */
+
+    .portfolio {
+        display: grid;
+        background-image: url('../img/office-865091_640.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+      }
+    
+    
+    .portfolio img {
+        display: none; /* Hide the image on mobile */
+      }
+    
+    .portfolio h1 {
+        position: relative;
+        place-self: center;
+        align-self: center;
+        z-index: 1;
+      }
+    /* slutt portfolio */
+
+    /* start explore  */
+    .explore{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        padding: 2%;
+        grid-gap:2%;
+    }
+    .explore h2 {
+        display: inline-block;
+        border-bottom: 5px solid #e6bd43; /* Yellow line color */
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px; /* Add margin to separate the list items */
+        width: -moz-available;
+        padding: 2rem;
+
+    }
+    
+    .explore ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .explore li {
+        display: inline-block;
+        margin-right: 20px; /* Adjust as needed to control the distance between list items */
+        padding: 1rem;
+        border: 2px solid black; 
+    }
+    
+    .explore li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #333; /* Set the color of the link text */
+        display: block; /* Make the entire area clickable */
+    }
+
+    .explore li:hover {
+        background-color: #e6bd43; /* Yellow background color on hover */
+        border-color: #e6bd43; /* Yellow border color on hover */
+    }
+
+    .explore li:hover a {
+        color: black; /* Black text color on hover */
+        font-weight: bold;
+    }
+     /* Set a maximum width for each section on small screens */
+    .branding, .design, .development {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+        max-width: 100%;
+    }
+    .branding h2, .design h2, .development h2 {
+        width: -moz-available;
+        align-self: left;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border-bottom: 5px solid #e6bd43; /* Yellow line color */
+        padding: 2rem;
+    }
+
+  /* Reset the width for article cards on small screens */
+    .branding article, .design article, .development article {
+        flex: 1 1 calc(100% - 20px); /* Full width with some margin between cards */
+    }
+    /* slutt poroducts  */
+
+    /*  start about our company 2 */
+    .about_our_company_2 {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        overflow: hidden;
+        background-image: url(../img/office-865091_640.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0%;
+        padding: 0%;
+    }
+    .about_our_company_2 img{
+        display: none;
+    }
+    .about_our_company_2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.3); /* Adjust the color and opacity as needed */
+    }
+    
+    .about_our_company_2 article {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: black;
+        z-index: 1; /* Set content on top of the background image */
+    }
+    
+    .about_our_company_2 h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .about_our_company_2 p {
+        font-size: 1rem;
+    }
+    
+    .get_in_touch_with_us_btn {
+        padding: 10px 20px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        background-color: #e6bd43;
+        color: black;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    
+
+    /* slutt about us */
+
+    /*  start our services 2  */
+    
+    .our_services_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center; /* Center items vertically */
+        place-items: center;
+        padding: 20px; /* Changed from percentage to pixels for better responsiveness */
+      }
+      
+    .our_services_2 h2 {
+        grid-column: 1;
+        margin-top: 0;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 2%;
+        text-align: center; /* Center the heading text */
+      }
+      
+    .our_services_2 article {
+        border: none;
+        display: flex; /* Use flexbox to center content inside the article */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
+        padding: 20px;
+        max-width: 300px; /* Optional: Set a maximum width for the articles */
+        margin: 10px; /* Add some margin between articles */
+      }
+      
+    .our_services_2 article i {
+        font-size: 2rem;
+      }
+      
+    .our_services_2 article h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1%;
+      }
+      
+    .our_services_2 article p {
+        font-size: 1rem;
+        text-align: center;
+      }
+      
+    
+
+    /* slutt our services 2  */
+
+    /* start ourclients  */
+    .our_clients {
+        background-color: #e6bd43;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .our_clients h2 {
+        color: black;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .our_clients img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 10px; /* Add margin between images and below the images */
+    }
+
+    /* slutt our clients */
+    
+    /* Start contact_us */
+    /* Start contact_us */
+    .contact_us {
+        display: grid;
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        background-color: #f4f3f1;
+        padding: 2rem;
+    }
+
+    .contact_us h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .contact_us h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .contact_us article {
+        border: none;
+    }
+
+    .contact_us .message {
+        grid-column: span 2; /* Span both columns on small screens */
+        grid-row: 2/3;
+        margin: 0; /* Remove the left and right margin */
+    }
+
+    .contact_us .message form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0; /* Remove the left and right margin */
+    }
+
+    .contact_us .message form label,
+    .contact_us .message form input,
+    .contact_us .message form textarea,
+    .contact_us .message form select {
+        width: 100%; /* Full width on small screens */
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        margin-left: 0; /* Remove the left margin */
+    }
+
+    #message {
+        height: 140px;
+        width: 100%; /* Full width on small screens */
+    }
+
+    #send_message {
+        width: 100%; /* Full width on small screens */
+    }
+    #send_message{
+        display: inline-block;
+        padding: 10px 20px;
+        font-weight: bold;
+        background-color: #e6bd43;
+        color: #000; /* Button text color */
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+        width: fit-content;
+    }
+
+    .contact_us .contact_information {
+        grid-column: span 2; /* Span both columns on small screens */
+        grid-row: 3/4;
+        margin: 0; /* Remove the left and right margin */
+    }
+
+    .contact_information p {
+        font-size: 1rem;
+    }
+
+    .contact_information ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contact_information li {
+        margin-bottom: 10px;
+    }
+
+    .contact_information i {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-right: 5px;
+    }
+
+    .contact_information a {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    .mappe{
+        width: 100%;
+        display: flex;
+    }
+
+
+    .back-to-top-btn {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+        background-color: black; 
+        color: #fff; 
+        border: none;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
+
+    .back-to-top-btn:hover {
+        opacity: 1;
+    }
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    
 /* responsitv desgin - desktop */
 @media only screen and (min-width: 600px){
     *{
         box-sizing: border-box;
-        font: inherit;
 
     }
-    #grid-container{
-        display: grid;
-        max-width: 1600px;
-    }
-
+    
     body{
-        width: 1600px;
+        max-width: 1600px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0 auto;
         background-color: #fff;
@@ -23,13 +735,15 @@
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
+        justify-content: space-between;
         padding: 2%;
     }
 
     .navigasjon_list{
         grid-column: 3;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        flex-direction: inherit;
         align-items: center;
         list-style-type: none;
     }
@@ -747,718 +1461,6 @@
 /* ............................................................................................................................. */
 /* responsiv design - mobil */
 
-@media only screen and (max-width: 599px){
-    *{
-        box-sizing: border-box;
-        font: inherit;
-    }
-    
-    body{
-        width: 100%;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 0;
-    
-    }
-    .skip-link{
-        display: none;
-    }
-    
-
-    .video-container{
-        display: none;
-     }
-
-    .navigasjon_header{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2%;
-    }
-    
-
-    .navigasjon_list{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 15px;
-        list-style-type: none;
-        padding: 0%;
-    }
-    .navigasjon_list *{
-        grid-area: "navigasjon";
-        text-decoration: none;
-        color: black;
-        font-weight:bold;
-        font-size: large;
-        padding: 0;
-        margin: 0.5rem;
-        list-style-type: none;
-    }
-     /* contaxt button start */
-     #contact_btn {
-        color: black;
-        background-color: #e6bd43;
-        border: none;
-        padding: 1rem;
-        padding: 1rem;
-        transition: background-color 0.5s, color 0.5s; 
-    }
-    
-    
-    /* contaxt button end */
-
-    /* underline når den aktuelle page er active */
-    .active_page *{
-        display: inline-block;
-        text-decoration: underline #e6bd43;
-        font-weight: bolder;
-        
-    }
-
-    .compeling_headline{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../img/office-865091_640.jpg);
-        background-size: cover;
-        background-position: center;
-      }
-    
-    .compeling_headline::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(255, 255, 255, 0.3); /* Adjust the color and opacity as needed */
-      }
-
-    .compeling_headline {
-        position: relative;
-        height: 40vh; /* Adjust the height as needed */
-        overflow: hidden;
-        margin-top: 2rem;
-    }
-    
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(227, 221, 221, 0.084);
-        z-index: 0; /* Ensure the overlay is behind the content */
-    }
-    
-    .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: black;
-        z-index: 1; /* Set content on top of the video */
-    }
-    
-    h1 {
-        
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    
-    p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-    
-    .read_more_about_out_services_btn{
-        padding: 10px 20px;
-        font-size: 0.7rem;
-        font-weight: bold;
-        background-color: #e6bd43; /* Button background color */
-        color: black; /* Button text color */
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    
-    /* end of headline*/
-    /* start subheading  */
-    .subheading{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-items: center;
-        padding: 6%;
-        
-    }
-    .subheading h2{
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    .subheading p{
-        text-align: center;
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-    /* slutt subheadline */
-
-    /* start about out company */
-    /* start about_out_company */
-    .about_our_company{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-items: center;
-        place-items: center;
-        padding: 2%;
-        background-color: #e6bd43;
-        grid-gap:2%;
-    }
-    .about_our_company img{
-        width: 300px;
-        
-    }
-    .about_our_company article{
-        padding: 4rem;
-        display: inline-grid;
-    }
-
-    .about_our_company h2{
-        text-align: left;
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    .about_our_company p{
-        text-align: left;
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-
-    .read_more_about_us_btn{
-        padding: 10px 20px;
-        font-size: 0.7rem;
-        font-weight: bold;
-        background-color: #e6bd43; 
-        color: black; 
-        text-decoration: none;
-        cursor: pointer;
-        border: 2px solid black;
-        justify-self: center;
-        align-self: center; 
-    }
-
-     
-    /* slutt about_our_company */
-
-    .our_services {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-items: center; /* Center items vertically */
-        place-items: center;
-        padding: 20px; /* Changed from percentage to pixels for better responsiveness */
-      }
-      
-    .our_services h2 {
-        grid-column: 1;
-        margin-top: 0;
-        font-size: 30px;
-        font-weight: bold;
-        padding: 2%;
-        text-align: center; /* Center the heading text */
-      }
-      
-    .our_services article {
-        border: none;
-        display: flex; /* Use flexbox to center content inside the article */
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center content horizontally */
-        padding: 20px;
-        max-width: 300px; /* Optional: Set a maximum width for the articles */
-        margin: 10px; /* Add some margin between articles */
-      }
-      
-    .our_services article i {
-        font-size: 2rem;
-      }
-      
-    .our_services article h2 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding: 1%;
-      }
-      
-    .our_services article p {
-        font-size: 1rem;
-        text-align: center;
-      }
-      
-    
-    /* start newsletter */
-    .newsletter{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5%;
-        background-color: #e0d9d8;
-        flex-direction: column;
-    }
-
-    .newsletter h2{
-        font-size: 1.5rem;
-        padding: 2%;
-        font-weight: bold;
-    }
-    .newsletter input[type="text"] {
-        padding: 12px 20px; 
-        height: auto; /* Justerer høyden til å passe innholdet, kan endres til en fast høyde om nødvendig */
-        font-size: 16px; /* Samme fontstørrelse som knappen */
-        border: 2px solid #ddd; /* Eksempel på en border, kan tilpasses */
-        box-sizing: border-box; /* Sørger for at padding ikke legger til ekstra bredde */
-    }
-
-    #signup{
-        padding: 10px 20px;
-    }
-
-    #sign_me_up {
-        background-color: #e6bd43;
-        color: black; 
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-    }
-      
-    
-
-    
-    /* slutt newsletter */
-
-    /* start footer */
-    /* start footer */
-    .footer{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        justify-items: center;
-        place-items: center;
-        background-color: #252525;
-        padding: 1rem;
-
-    }
-    .footer h3{
-        text-align: center;
-        font-size: large;
-        padding: 2rem;
-        color: #ddd;
-
-    }
-    #social-icons{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100px;
-        list-style-type: none;
-        padding: 0%;
-        
-      }
-
-    #social-icons i{
-        color: white;
-        font-size: 2rem;
-    
-    }
-    
-    
-
-    /* portfolio nettside */
-
-    .portfolio {
-        display: grid;
-        background-image: url('../img/office-865091_640.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 40vh;
-      }
-    
-    
-    .portfolio img {
-        display: none; /* Hide the image on mobile */
-      }
-    
-    .portfolio h1 {
-        position: relative;
-        place-self: center;
-        align-self: center;
-        z-index: 1;
-      }
-    /* slutt portfolio */
-
-    /* start explore  */
-    .explore{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-items: center;
-        place-items: center;
-        padding: 2%;
-        grid-gap:2%;
-    }
-    .explore h2 {
-        display: inline-block;
-        border-bottom: 5px solid #e6bd43; /* Yellow line color */
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 20px; /* Add margin to separate the list items */
-        width: -moz-available;
-        padding: 2rem;
-
-    }
-    
-    .explore ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .explore li {
-        display: inline-block;
-        margin-right: 20px; /* Adjust as needed to control the distance between list items */
-        padding: 1rem;
-        border: 2px solid black; 
-    }
-    
-    .explore li a {
-        text-decoration: none;
-        font-weight: bold;
-        color: #333; /* Set the color of the link text */
-        display: block; /* Make the entire area clickable */
-    }
-
-    .explore li:hover {
-        background-color: #e6bd43; /* Yellow background color on hover */
-        border-color: #e6bd43; /* Yellow border color on hover */
-    }
-
-    .explore li:hover a {
-        color: black; /* Black text color on hover */
-        font-weight: bold;
-    }
-     /* Set a maximum width for each section on small screens */
-    .branding, .design, .development {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2%;
-        max-width: 100%;
-    }
-    .branding h2, .design h2, .development h2 {
-        width: -moz-available;
-        align-self: left;
-        text-align: left;
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-        border-bottom: 5px solid #e6bd43; /* Yellow line color */
-        padding: 2rem;
-    }
-
-  /* Reset the width for article cards on small screens */
-    .branding article, .design article, .development article {
-        flex: 1 1 calc(100% - 20px); /* Full width with some margin between cards */
-    }
-    /* slutt poroducts  */
-
-    /*  start about our company 2 */
-    .about_our_company_2 {
-        position: relative;
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        align-items: center;
-        height: 60vh;
-        overflow: hidden;
-        background-image: url(../img/office-865091_640.jpg);
-        background-size: cover;
-        background-position: center;
-        margin: 0%;
-        padding: 0%;
-    }
-    .about_our_company_2 img{
-        display: none;
-    }
-    .about_our_company_2::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(255, 255, 255, 0.3); /* Adjust the color and opacity as needed */
-    }
-    
-    .about_our_company_2 article {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: black;
-        z-index: 1; /* Set content on top of the background image */
-    }
-    
-    .about_our_company_2 h2 {
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    
-    .about_our_company_2 p {
-        font-size: 1rem;
-    }
-    
-    .get_in_touch_with_us_btn {
-        padding: 10px 20px;
-        font-size: 0.7rem;
-        font-weight: bold;
-        background-color: #e6bd43;
-        color: black;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-    }
-    
-    
-
-    /* slutt about us */
-
-    /*  start our services 2  */
-    
-    .our_services_2 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-items: center; /* Center items vertically */
-        place-items: center;
-        padding: 20px; /* Changed from percentage to pixels for better responsiveness */
-      }
-      
-    .our_services_2 h2 {
-        grid-column: 1;
-        margin-top: 0;
-        font-size: 30px;
-        font-weight: bold;
-        padding: 2%;
-        text-align: center; /* Center the heading text */
-      }
-      
-    .our_services_2 article {
-        border: none;
-        display: flex; /* Use flexbox to center content inside the article */
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center content horizontally */
-        padding: 20px;
-        max-width: 300px; /* Optional: Set a maximum width for the articles */
-        margin: 10px; /* Add some margin between articles */
-      }
-      
-    .our_services_2 article i {
-        font-size: 2rem;
-      }
-      
-    .our_services_2 article h2 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding: 1%;
-      }
-      
-    .our_services_2 article p {
-        font-size: 1rem;
-        text-align: center;
-      }
-      
-    
-
-    /* slutt our services 2  */
-
-    /* start ourclients  */
-    .our_clients {
-        background-color: #e6bd43;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .our_clients h2 {
-        color: black;
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-    
-    .our_clients img {
-        max-width: 100%;
-        display: block;
-        margin: 0 auto 10px; /* Add margin between images and below the images */
-    }
-
-    /* slutt our clients */
-    
-    /* Start contact_us */
-    /* Start contact_us */
-    .contact_us {
-        display: grid;
-        grid-template-columns: 1fr; /* Change to a single column layout */
-        background-color: #f4f3f1;
-        padding: 2rem;
-    }
-
-    .contact_us h2 {
-        text-align: center;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .contact_us h3 {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    .contact_us article {
-        border: none;
-    }
-
-    .contact_us .message {
-        grid-column: span 2; /* Span both columns on small screens */
-        grid-row: 2/3;
-        margin: 0; /* Remove the left and right margin */
-    }
-
-    .contact_us .message form {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: 0; /* Remove the left and right margin */
-    }
-
-    .contact_us .message form label,
-    .contact_us .message form input,
-    .contact_us .message form textarea,
-    .contact_us .message form select {
-        width: 100%; /* Full width on small screens */
-        box-sizing: border-box;
-        margin-bottom: 10px;
-        margin-left: 0; /* Remove the left margin */
-    }
-
-    #message {
-        height: 140px;
-        width: 100%; /* Full width on small screens */
-    }
-
-    #send_message {
-        width: 100%; /* Full width on small screens */
-    }
-    #send_message{
-        display: inline-block;
-        padding: 10px 20px;
-        font-weight: bold;
-        background-color: #e6bd43;
-        color: #000; /* Button text color */
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.5s, color 0.5s;
-        width: fit-content;
-    }
-
-    .contact_us .contact_information {
-        grid-column: span 2; /* Span both columns on small screens */
-        grid-row: 3/4;
-        margin: 0; /* Remove the left and right margin */
-    }
-
-    .contact_information p {
-        font-size: 1rem;
-    }
-
-    .contact_information ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .contact_information li {
-        margin-bottom: 10px;
-    }
-
-    .contact_information i {
-        display: inline-block;
-        font-size: 1.5rem;
-        margin-right: 5px;
-    }
-
-    .contact_information a {
-        color: blue;
-        text-decoration: underline;
-    }
-
-    .mappe{
-        width: 100%;
-        display: flex;
-    }
-
-
-    .back-to-top-btn {
-        display: block;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        font-size: 24px;
-        background-color: black; 
-        color: #fff; 
-        border: none;
-        padding: 10px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        opacity: 0.8;
-        transition: opacity 0.3s;
-    }
-
-    .back-to-top-btn:hover {
-        opacity: 1;
-    }
-
-
-
-}
-    
 
 
 
