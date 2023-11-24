@@ -12,7 +12,7 @@
     }
 
     body{
-        width: 100%;
+        width: 1600px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0 auto;
         background-color: #fff;
@@ -304,6 +304,7 @@
     
     /* slutt newsletter */
     /* start footer */
+    
     .footer{
         display: flex;
         justify-content: space-between;
@@ -742,6 +743,8 @@
         opacity: 1;
     }
 }
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* ............................................................................................................................. */
 /* responsiv design - mobil */
 
 @media only screen and (max-width: 599px){
@@ -812,13 +815,7 @@
         transition: background-color 0.5s, color 0.5s; 
     }
     
-    #contact_btn:hover {
-        background-color: black;
-        color: #e6bd43;
-        margin-left: 0%;
-        margin-right: 0%;
-        cursor: pointer;
-    }
+    
     /* contaxt button end */
 
     /* underline når den aktuelle page er active */
@@ -900,13 +897,7 @@
         cursor: pointer;
     }
 
-    .read_more_about_out_services_btn:hover {
-        background-color: black;
-        color: #e6bd43;
-        margin-left: 0%;
-        margin-right: 0%;
-        cursor: pointer;
-    }
+    
     /* end of headline*/
     /* start subheading  */
     .subheading{
@@ -978,14 +969,7 @@
         align-self: center; 
     }
 
-    .read_more_about_us_btn:hover {
-        background-color: black;
-        color: #e6bd43;
-        margin-left: 0%;
-        margin-right: 0%;
-        cursor: pointer;
-
-    }   
+     
     /* slutt about_our_company */
 
     .our_services {
@@ -1070,10 +1054,7 @@
         font-weight: bold;
     }
       
-    #sign_me_up:hover {
-        background-color: black;
-        color: #e6bd43;
-    }
+    
 
     
     /* slutt newsletter */
@@ -1274,13 +1255,7 @@
         cursor: pointer;
     }
     
-    .get_in_touch_with_us_btn:hover {
-        background-color: black;
-        color: #e6bd43;
-        margin-left: 0;
-        margin-right: 0;
-        cursor: pointer;
-    }
+    
 
     /* slutt about us */
 
