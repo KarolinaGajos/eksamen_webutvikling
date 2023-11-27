@@ -56,7 +56,7 @@
                         <a href="about.html" class="get_in_touch_with_us_btn">Get in touch with us</a>
                     </article>
                 </section>
-                <section class="our_services_2" itemscope itemtype="http://schema.org/Article" itemprop="articleBody">
+                <section class="our_services_2" itemscope itemtype="http://schema.org/Article">
                     <h2 itemprop="name">Our Services</h2>
                     <article>
                         <i id="users" class="fa-solid fa-users"></i>
@@ -89,25 +89,30 @@
                 </section>
                 <section class="contact_us">
                     <h2>Contact us</h2>
-                    <article class="message">
+                    <article class="message" itemscope itemtype="https://schema.org/Message">
                         <h3>Send us a message</h3>
                         <form action="#" method="post">
                             Name
-                            <input type="text" name="name" placeholder="Ola Nordmann..." id="name">
+                            <input type="text" name="name" placeholder="Ola Nordmann..." id="name" itemprop="sender">
                             Subject
-                            <input type="text" name="Subject" placeholder="Branding.." id="branding">
+                            <input type="text" name="Subject" placeholder="Branding.." id="branding" itemprop="about">
                             Message
                             <textarea name="message" placeholder="Message" id="message"></textarea>
-                            <input type="submit" value="Send message" id="send_message">
+                            <input type="submit" value="Send message" id="send_message" itemprop="messageAttachment">
                         </form>
                     </article>
-                    <article class="contact_information" id="contact">
-                        <h3>Contact information</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et orci felis. Vivamus vehicula scelerisque nisi, mattis ullamcorper erat molestie vel. Ut rutrum bibendum aliquet. Proin eleifend rhoncus porttitor. Etiam porta tortor eu ipsum congue posuere. Nulla id venenatis quam. Pellentesque at consectetur libero, vel sagittis sem. Sed et eros diam. Nunc vehicula placerat molestie. </p>
-                        <ul>
-                            <li><i class="fa-solid fa-location-pin"></i> R A Veien 4, 1757 Halden</li>
-                            <li><i class="fa-solid fa-phone"></i>69 60 80 00</li>
-                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></li>
+                    <article class="contact_information" id="contact" itemscope itemtype="http://schema.org/Article">
+                        <h3 itemprop="name">Contact information</h3>
+                        <p itemprop="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et orci felis. Vivamus vehicula scelerisque nisi, mattis ullamcorper erat molestie vel. Ut rutrum bibendum aliquet. Proin eleifend rhoncus porttitor. Etiam porta tortor eu ipsum congue posuere. Nulla id venenatis quam. Pellentesque at consectetur libero, vel sagittis sem. Sed et eros diam. Nunc vehicula placerat molestie. </p>
+                        <ul itemscope itemtype="https://schema.org/ContactPoint">
+                            <li itemscope itemtype="https://schema.org/PostalAddress">
+                                <i class="fa-solid fa-location-pin"></i>
+                                <span itemprop="streetAddress">R A Veien 4</span>,
+                                <span itemprop="postalCode">1757</span>
+                                <span itemprop="addressLocality">Halden</span>
+                            </li>
+                            <li  itemprop="telephone"><i class="fa-solid fa-phone"></i>69 60 80 00</li>
+                            <li itemprop="email"><i class="fa-solid fa-envelope"></i><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></li>
                         </ul>
                     </article>
                 </section>
