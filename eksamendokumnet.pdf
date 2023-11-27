@@ -11,12 +11,15 @@ Linjer med kode uten kommentar kommer fra kunnskapen jeg fikk gjennom denne seme
 .....
 Jeg har gikk gjennom innholdet i alt="" tagger, jeg anser det som nødvendig innhold. 
 
+Metadata: den ble hentet fra tidligere obligatoriske oppgaver, samt https://ogp.me/
+Microdata - den ble vrudert ut i fra innholdet på nettsiden, jeg har brukt: https://validator.schema.org/ og dens skjema for å validere microdata. 
+
 Kilder:
 Font awesome: Jeg har overførte font awesome mappe fra min egen PC, siden jeg hadde det siden vi brukte det på tidligere Obliger. Link til src er i html koden.
 Jeg har hentet icone fra https://fontawesome.com/icons
 Jeg har tatt placeholder bilder fra https://placehold.co/400x400/png
 
-Googlemaps: kilde: https://developers.google.com/maps/documentation/embed/embedding-map
+Google maps: kilde: https://developers.google.com/maps/documentation/embed/embedding-map
 
 Links to a spesifikk section: https://stackoverflow.com/questions/8424785/link-to-a-section-of-a-webpage
 I use id, and droppa div
