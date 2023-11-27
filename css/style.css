@@ -464,8 +464,16 @@
 
   /* Reset the width for article cards on small screens */
     .branding article, .design article, .development article {
+        display: flex;
+        flex-direction: column;
         flex: 1 1 auto; /* Full width with some margin between cards -hjelp from chatgpt*/
+        width: 100%;
+        align-content: start;
+        place-self: center;
+        max-width: 692px;
+        padding: 2%;
     }
+   
     /* slutt poroducts  */
 
 
@@ -1096,16 +1104,21 @@
     /* start brandig */
     /* Set a common style for the sections */
     .branding, .design, .development {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+        gap: 0.5rem;
+        width: 100%;
     }
     
     /* Styling for article cards in desktop layout */
     .branding article, .design article, .development article {
         flex: 1 1 0; /* Allow items to grow, but not to exceed their content size - hjelp fra chatgpt */
-        max-width: 692px; 
+    }
+    .branding img, .design img, .development img {
+        max-width: 100%; /* Make the images responsive */
     }
     
     /* Make the last article in the "branding" section larger */
