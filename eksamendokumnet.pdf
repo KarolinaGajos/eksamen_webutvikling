@@ -1,6 +1,15 @@
 Detter er dokumantasjon på eksamen.
 
 Jeg har bestemt meg for å gjøre det beste dvs. gå for karakter A. Etter å ha lest eksamenoppgaven bestemte jeg meg også å jobbe systematisk dvs. fra krakter E til A og så forbedre/endre på ting underveis.
+Oppgavetekst spør etter products.html siden, i demo er det vist portfolio siden - har nevnte den ene siden products.html men den skal inneholde alt som vises på portfolfio. 
+Jeg begynnte å kode først desktop, siden der oppgave begynte, jeg viste jeg kommer til å lage også versjon for mobil, derfor satt jeg opp media querries med en gang.
+Midt i oppgaven kjente jeg at det blir vanskelig og mye kode med to forskellige media querries - derfor valgt jeg å kode først men mobil først prinsipper - altså først på mobil for og så for desktop unden 1 media querries. 
+
+
+Det er en del kommentarer i css - mtp kilder fra chatgpt
+Linjer med kode uten kommentar kommer fra kunnskapen jeg fikk gjennom denne semester i webutvikling, 
+.....
+
 
 Kilder:
 Font awesome: Jeg har overførte font awesome mappe fra min egen PC, siden jeg hadde det siden vi brukte det på tidligere Obliger. Link til src er i html koden.
