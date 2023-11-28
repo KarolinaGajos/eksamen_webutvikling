@@ -14,6 +14,8 @@ Jeg har gikk gjennom innholdet i alt="" tagger, jeg anser det som nødvendig inn
 Metadata: den ble hentet fra tidligere obligatoriske oppgaver, samt https://ogp.me/
 Microdata - den ble vrudert ut i fra innholdet på nettsiden, jeg har brukt: https://validator.schema.org/ og dens skjema for å validere microdata. 
 
+For flex-grow av produktsiden brukte jeg masse forskellige kilder - googling, noe metoder fra stackoverflow, til slutt masse spørsmål til chatgpt, til slutt etter manuelt justering av % og andre verdier fikk jeg til en ønsket resultat. 
+
 Kilder:
 Font awesome: Jeg har overførte font awesome mappe fra min egen PC, siden jeg hadde det siden vi brukte det på tidligere Obliger. Link til src er i html koden.
 Jeg har hentet icone fra https://fontawesome.com/icons

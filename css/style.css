@@ -2,12 +2,12 @@
 
     *{
         box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
     
     body{
         width: 100%;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Roboto', sans-serif;
         margin: 0 auto;
         background-color: #fff;
         padding: 0;
@@ -452,7 +452,7 @@
         max-width: 100%;
     }
     .branding h2, .design h2, .development h2 {
-        width: -moz-available;
+        width: 100%;
         align-self: left;
         text-align: left;
         font-size: 2rem;
@@ -466,7 +466,6 @@
     .branding article, .design article, .development article {
         display: flex;
         flex-direction: column;
-        flex: 1 1 auto; /* Full width with some margin between cards -hjelp from chatgpt*/
         width: 100%;
         align-content: start;
         place-self: center;
@@ -758,7 +757,6 @@
     
     body{
         max-width: 1600px;
-        font-family: Arial, Helvetica, sans-serif;
         margin: 0 auto;
         background-color: #fff;
     }
@@ -1115,16 +1113,10 @@
     
     /* Styling for article cards in desktop layout */
     .branding article, .design article, .development article {
-        flex: 1 1 0; /* Allow items to grow, but not to exceed their content size - hjelp fra chatgpt */
-    }
-    .branding img, .design img, .development img {
-        max-width: 100%; /* Make the images responsive */
+        flex: 1 1 40%; /* Allow items to grow, but not to exceed their content size - hjelp fra chatgpt */
+        width: calc(40% - 20px);
     }
     
-    /* Make the last article in the "branding" section larger */
-    .branding article:last-child {
-        flex: 2 1 0; /* Adjust the flex value to allow the last article to grow more */
-    }
     
     /* Remove margin-bottom from the last article in each section to avoid extra space */
     .branding article:last-child, .design article:last-child, .development article:last-child {
@@ -1136,11 +1128,25 @@
         max-width: none; /* Adjust the max-width based on your design */
         width: 100%; /* Ensure the section takes 100% width within its parent */
     }
+
     
     /* Add a hover effect for the article cards */
     .branding article:hover, .design article:hover, .development article:hover {
         transform: scale(1.03); /* Increase the scale on hover */
     }
+    @media screen and (min-width: 768px) {
+        .branding article, .design article, .development article {
+            flex: 1 1 30%; /* Adjusted styling for larger screens */
+            width: calc(30% - 20px);
+        }
+    
+        /* Make the last article in the "branding" section larger for larger screens */
+        .branding article:last-child {
+            flex: 2 1 48%;
+        }
+    }
+    /* etter masse googling og samlaler med chatgpt og justering av % og andre verdier fikk jeg til slutt effekten som kan ses på demo-video */
+    
 
     /* start på about siden */
 
