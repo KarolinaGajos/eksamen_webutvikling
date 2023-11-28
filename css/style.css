@@ -74,8 +74,8 @@
     /* underline når den aktuelle page er active- fikk hjelp av chathpt */
     .active_page *{
         display: inline-block;
-        text-decoration: underline #e6bd43;
-        font-weight: bolder;
+        text-decoration: underline #e6bd43 4px;
+        font-size: larger;
         
     }
     /* start compeling_headline - bilde på mobil, video på desktop */
@@ -814,8 +814,8 @@
     /* underline når den aktuelle page er active */
     .active_page *{
         display: inline-block;
-        text-decoration: underline #e6bd43;
-        font-weight: bolder;
+        text-decoration: underline #e6bd43 4px;
+        font-size: larger;
         
     }
 
